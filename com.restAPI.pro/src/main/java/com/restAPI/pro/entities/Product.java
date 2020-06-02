@@ -6,9 +6,6 @@ public class Product {
 	private String name;
 	private String description;
 	
-	public Product() {
-		
-	}
 	
 	public Product(String id, String name, String description) {
 		super();
@@ -17,7 +14,10 @@ public class Product {
 		this.description = description;
 	}
 	
-	
+	public Product(String string, String string2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getId() {
 		return id;
 	}
@@ -35,6 +35,13 @@ public class Product {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", description=" + description + ", getId()=" + getId()
+				+ ", getName()=" + getName() + ", getDescription()=" + getDescription() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
 	
 	

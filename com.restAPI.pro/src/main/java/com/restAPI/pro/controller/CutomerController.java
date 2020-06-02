@@ -39,9 +39,11 @@ public class CutomerController {
 		Product product = customerService.addProduct(customerId, newProduct);
 		
 		if(product == null)
+			
 			return ResponseEntity.noContent().build();
 		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path(
 				"/{id}").buildAndExpand(product.getId()).toUri();
+		return null;
 	}
 	
 

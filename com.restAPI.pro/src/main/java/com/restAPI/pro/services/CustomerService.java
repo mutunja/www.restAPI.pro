@@ -18,6 +18,7 @@ public class CustomerService {
 	
 	static {
 		// initialize Date
+		
 		Product product1 = new Product("Product_A", "OnePlus 8 Pro");
 		Product product2 = new Product("Product_B", "OnePlus 8");
 		Product product3 = new Product("Product_C", "OnePlus 7 Pro");
@@ -63,12 +64,26 @@ public class CustomerService {
 		if(customer == null ) {
 			return null;
 		}
+		return null;
 	}
 
+	
 	public CustomerService() {
-		super();
-		// TODO Auto-generated constructor stub
+		
 	}
+
+	public Product addProduct(String customerId, Product newProduct) {
+		Customer customer = retrieveCustomer(customerId);
+		if(customer == null ) {
+			return null;
+		}
+		return null;
+	}
+
+	/*public Product addProduct(String customerId, Product newProduct) {
+		//TODO Auto-generated method stub
+		return null;
+	}*/
 
 	
 }

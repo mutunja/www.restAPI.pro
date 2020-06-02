@@ -17,13 +17,6 @@ public class Customer {
 		this.products = products;
 	}
 
-	@Override
-	public String toString() {
-		return "Customer [id=" + id + ", name=" + name + ", description=" + description + ", products=" + products
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
-	}
-
 	public String getId() {
 		return id;
 	}
@@ -56,7 +49,13 @@ public class Customer {
 		this.products = products;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", description=" + description + ", products=" + products
+				+ ", getId()=" + getId() + ", getName()=" + getName() + ", getDescription()=" + getDescription()
+				+ ", getProducts()=" + getProducts() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
+	}
 	
 	
 
